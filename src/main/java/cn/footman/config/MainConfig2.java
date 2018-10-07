@@ -1,6 +1,7 @@
 package cn.footman.config;
 
 import cn.footman.bean.Color;
+import cn.footman.bean.ColorFactoryBean;
 import cn.footman.bean.Person;
 import cn.footman.bean.Red;
 import cn.footman.condition.LinuxCondition;
@@ -78,9 +79,9 @@ public class MainConfig2{
      * 		2）、要获取工厂Bean本身，我们需要给id前面加一个&
      * 			&colorFactoryBean
      */
-//    @Bean
-//    public ColorFactoryBean colorFactoryBean(){
-//        return new ColorFactoryBean();
-//    }
+    @Bean
+    public ColorFactoryBean colorFactoryBean(){
+        return new ColorFactoryBean();
+    }
 
 }
